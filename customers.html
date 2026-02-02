@@ -47,10 +47,21 @@
             color: rgb(215, 255, 237);
             text-decoration: none;
         }
+        .head{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 450px;
+        }
 
         .page_head {
+            align-items: center;
             font-weight: 700;
             color: rgb(34, 34, 34);
+        }
+        .search_body{
+            margin-top: 1.5%;
         }
         .table_box{
             width: 100%;
@@ -117,7 +128,13 @@
         </div>
         <div class="container">
             <br>
-            <h1 class="page_head">Customer Data</h1>
+            <div class="head">
+                <h1 class="page_head">Customer Data</h1>
+                <form class="search_body d-flex" role="search">
+                    <input class="search form-control " type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
             <br><br>
             
             <div class="table_box">

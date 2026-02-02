@@ -1,6 +1,7 @@
 /* ================= COMMON ================= */
 let allCustomerData = JSON.parse(localStorage.getItem("allCustomerData")) || [];
 
+
 /* ================= ADD CUSTOMER PAGE ================= */
 const customerData = document.querySelector(".add_customer");
 
@@ -95,6 +96,10 @@ if (editForm) {
     inputs[1].value = data.email;
     inputs[2].value = data.number;
     inputs[3].value = data.address;
+    // faltudimag
+    inputs[4].value = data.date;
+    inputs[5].value = data.country;
+    inputs[6].value = data.state;
 
     editForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -103,7 +108,10 @@ if (editForm) {
         name: inputs[0].value,
         email: inputs[1].value,
         number: inputs[2].value,
-        address: inputs[3].value
+        address: inputs[3].value,
+        date: inputs[4].value,
+        country: inputs[5].value,
+        state: inputs[6].value
       };
 
       localStorage.setItem("allCustomerData", JSON.stringify(allCustomerData));
@@ -143,3 +151,48 @@ if (customerDetails) {
 
 
 }  
+
+// search
+
+let searchEl = document.querySelector(".search");
+
+if (searchEl){
+  searchEl.oninput = () =>{
+    search();
+}
+}
+
+const search =() =>{
+  let value = searchEl.value.toLowerCase();
+  let tr = customerList.querySelectorAll("TR");
+  let i;
+  for(i=0;i<tr.length;i++)
+  {
+    let allTD = tr[i].querySelectorAll("TD");
+    let name = allTD[1].innerHTML;
+    if(name.toLocaleLowerCase().indexOf(value) != -1)
+    {
+      tr[i].style.display = ""; 
+    }
+    else{
+      tr[i].style.display ="none";
+    }
+    let email = allTD[2].innerHTML;
+    if(email.toLocaleLowerCase().indexOf(value) != -1)
+    {
+      tr[i].style.display ="";
+    }
+    else{
+      tr[i].style.display = "none";
+    }
+  }
+}
+
+// cards
+document.addEventListener("DOMContentLoaded", () => {
+  const data = JSON.parse(localStorage.getItem("allCustomerData")) || [];
+
+  const total = document.getElementById("totalCustomers");
+  if (total) total.innerText = data.length;
+});
+
