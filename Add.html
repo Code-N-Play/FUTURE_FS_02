@@ -54,7 +54,7 @@
         }
         .addform{
             width: 99%;
-            height: 525px;
+            height: 620px;
             background-color: rgb(235, 235, 252);
             justify-content: center;
             padding: 55px;
@@ -80,6 +80,20 @@
             width: 200px;
             align-items: center;
         }
+        .side_bar {
+            
+            width: 220px;
+            background-color: rgb(59, 59, 59);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+
+        }
+        .container{
+            margin-left: 230px;
+        }
+
 
         
 
@@ -98,12 +112,12 @@
             <a href="dashboard.html" class="side_bar_link"> Dashboard</a><br><br><br>
             <a href="Add.html" class="side_bar_link" style="color: red;">Add Customer </a><br><br><br>
             <a href="customers.html" class="side_bar_link">Customers</a><br><br><br>
-            <a href="#" class="side_bar_link" style="margin-bottom: -20px;">profile</a><br>
+            <a href="profile.html" class="side_bar_link" style="margin-bottom: -20px;">About US !</a><br>
         </div>
         <div class="container">
             <br>
             <h1 class="page_head">Add Customer</h1>
-            <br><br>
+            <br>
             
             <div class="addform">
                 <form class="add_customer">
@@ -118,8 +132,8 @@
                     <label class="tag">Address (City Name Only)</label><br>
                     <input type="text" placeholder="         Address" required maxlength="50" class="form-control"><br>
                     <!-- faltudimag -->
-                    <label class="tag">date</label><br>
-                    <input type="date" placeholder="         name@gmail.com" required maxlength="80" class="form-control"><br>
+                    <!-- <label class="tag">date</label><br>
+                    <input type="date" placeholder="         name@gmail.com" required maxlength="80" class="form-control"><br> -->
                     <label class="tag" >country</label><br>
                     <input type="text" placeholder="         Mobile Number" required maxlength="10 " class="form-control"><br>
                     <label class="tag">state (City Name Only)</label><br>

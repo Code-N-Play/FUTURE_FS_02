@@ -26,10 +26,17 @@
         }
 
         .side_bar {
-            height: 100%;
-            width: 250px;
+            
+            width: 220px;
             background-color: rgb(59, 59, 59);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
 
+        }
+        .container{
+            margin-left: 230px;
         }
 
         .side_bar_link {
@@ -66,7 +73,7 @@
             text-align: center;
         }
 
-        .number {   
+        .number {
             text-align: center;
             font-weight: 700;
         }
@@ -84,20 +91,22 @@
             font-size: 20px;
             margin-left: -20px;
         }
-        .table1{
+
+        .table1 {
             margin-left: auto;
             width: 95%;
             justify-content: center;
-            
+
         }
 
         table {
             width: 100%;
             align-items: center;
             text-align: center;
-            
+
         }
-        .btn1{
+
+        .btn1 {
             width: 70px;
             height: 23px;
             background-color: aquamarine;
@@ -105,13 +114,45 @@
             border-radius: 5px;
             margin: 2px;
         }
-        .btn2{
+
+        .btn2 {
             width: 70px;
             height: 23px;
             background-color: rgb(255, 101, 101);
             border: none;
             border-radius: 5px;
             margin: 2px;
+        }
+
+        .recent-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            background: #f5f5f5;
+        }
+
+        .badge {
+            margin-top: -40px;
+            height: 35px;
+            width: 85px;
+            padding: 2px 8px;
+            font-size: 15px;
+            border-radius: 12px;
+            margin-left: 90%;
+            
+            
+        }
+
+        .badge.active {
+            background: #4caf50;
+            color: white;
+            padding: 10px;
+        }
+
+        .badge.closed {
+            background: #2196f3;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
@@ -120,7 +161,7 @@
 
     <div class="overall">
 
-        <div class="side_bar">
+        <div class="side_bar ">
             <br>
             <h3 class="title"><a style="color: red;">C</a><a style="color: yellow;"> R</a><a
                     style="color: rgb(3, 231, 3);"> M</a></h3>
@@ -128,7 +169,7 @@
             <a href="dashboard.html" class="side_bar_link" style="color: red;"> Dashboard</a><br><br><br>
             <a href="Add.html" class="side_bar_link">Add Customer </a><br><br><br>
             <a href="customers.html" class="side_bar_link">Customers</a><br><br><br>
-            <a href="#" class="side_bar_link" style="margin-bottom: -20px;">profile</a><br>
+            <a href="profile.html" class="side_bar_link" style="margin-bottom: -20px;">About US !</a><br>
         </div>
         <div class="container">
             <br>
@@ -140,8 +181,8 @@
                     <h2 class="number" id="totalCustomers">0</h2>
                 </div>
                 <div class="card" style="background-color: rgb(255, 255, 123);">
-                    <h4 class="card_heading" >Active Customers</h4>
-                    <h2 class="number"id="activeCustomers">0</h2>
+                    <h4 class="card_heading">Active Customers</h4>
+                    <h2 class="number" id="activeCustomers">0</h2>
                 </div>
                 <div class="card" style="background-color: rgb(144, 248, 144);">
                     <h4 class="card_heading">New Customers</h4>
@@ -151,8 +192,13 @@
                     <h4 class="card_heading">Closed Deals</h4>
                     <h2 class="number" id="closedDeals">0</h2>
                 </div>
+            </div><br><br>
+            <div class="recent-customers">
+                <h3 style="font-weight: 600;">Recently Added Customers</h3><br>
+                <div id="recentCustomers"></div>
             </div>
-            
+            <br>
+
         </div>
 
     </div>

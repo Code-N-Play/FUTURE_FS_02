@@ -54,7 +54,7 @@
         }
         .addform{
             width: 99%;
-            height: 525px;
+            height: 680px;
             background-color: rgb(235, 235, 252);
             justify-content: center;
             padding: 55px;
@@ -78,10 +78,38 @@
             font-weight: 700;
             border-radius: 15px;
             width: 200px;
-            align-items: center;
+            margin-top: -45px;
+            margin-left: 78%;
         }
+        .side_bar {
+            
+            width: 220px;
+            background-color: rgb(59, 59, 59);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
 
-        
+        }
+        .container{
+            margin-left: 230px;
+        }
+        .openclose{
+            height: 55px;
+            width: 150px;
+            background-color: rgb(255, 66, 66);
+            border-radius: 15px;
+           
+        }
+        /* #statusCheck{ */
+            /* align-items: center;
+            margin-top: 50%;
+            margin-left: 50%;
+        } */
+        .kkkk{
+            margin-top: 10px;
+            margin-left: 28px;
+        }
 
     </style>
 </head>
@@ -98,7 +126,7 @@
             <a href="dashboard.html" class="side_bar_link"> Dashboard</a><br><br><br>
             <a href="Add.html" class="side_bar_link" >Add Customer </a><br><br><br>
             <a href="customers.html" class="side_bar_link">Customers</a><br><br><br>
-            <a href="#" class="side_bar_link" style="margin-bottom: -20px;">profile</a><br>
+            <a href="profile.html" class="side_bar_link" style="margin-bottom: -20px;">About US !</a><br>
         </div>
         <div class="container">
             <br>
@@ -118,12 +146,17 @@
                     <label class="tag">Address (City Name Only)</label><br>
                     <input type="text" placeholder="         Address" required maxlength="50" class="form-control"><br>
                     <!-- faltudimag -->
-                    <label class="tag">date</label><br>
-                    <input type="date" placeholder="         name@gmail.com" required maxlength="80" class="form-control"><br>
+                    <!-- <label class="tag">date</label><br>
+                    <input type="date" placeholder="         name@gmail.com" required maxlength="80" class="form-control"><br> -->
                     <label class="tag" >country</label><br>
                     <input type="text" placeholder="         Mobile Number" required maxlength="10 " class="form-control"><br>
                     <label class="tag">state</label><br>
-                    <input type="text" placeholder="         Address" required maxlength="50" class="form-control"><br>
+                    <input type="text" placeholder="         Address" required maxlength="50" class="form-control"><br><br>
+                   <div class="openclose">
+                    <label class="kkkk">
+                        <input type="checkbox" id="statusCheck">Deal Closed
+                    </label>
+                   </div>
                     <button type="submit" class="edit_btn"> Edit Customer</button><br>
                 </form>
             </div>

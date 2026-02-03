@@ -1,12 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> About US ! </title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- BoxIcons -->
+    <!-- <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+    <!-- hugeicons -->
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <!-- animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+         .title {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            
+        }
+
+        .overall {
+            display: flex;
+            justify-content: center;
+            gap: 2px;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .side_bar {
+            height: 100%;
+            width: 250px;
+            background-color: rgb(59, 59, 59);
+
+        }
+
+        .side_bar_link {
+
+            font-size: 17px;
+            font-weight: 700;
+            padding: 25px;
+            color: rgb(215, 255, 237);
+            text-decoration: none;
+        }
+
+        .page_head {
+            font-weight: 700;
+            color: rgb(34, 34, 34);
+        }
+        .addform{
+            width: 99%;
+            height: 525px;
+            background-color: rgb(235, 235, 252);
+            justify-content: center;
+            padding: 55px;
+            border-radius: 20px;
+
+        }
+        .tag{
+            font-weight: 600;
+            color: black;
+        }
+        input{
+            width: 100%;
+            padding: 2px;
+            border-radius: 10px;
+            
+        }
+        .edit_btn{
+            background-color: rgb(138, 253, 144);
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 15px;
+            width: 200px;
+            align-items: center;
+        }
+        .top_bar{
+            margin-top: -45px;
+            height: 310px;
+            width: 100%;
+            background-color: rgb(196, 196, 196);
+            border-radius: 25px;
+            /* /* display: flex; */
+            align-items: center; 
+        }
+        .image{
+            margin-top: 35px;
+            height: 150px;
+            width: 144px;
+            border-radius: 25px;
+            border-style: double;
+            border-width: 10px;
+            border-color: black;
+            margin-left: 50px;
+            
+        }
+        .text{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+       
+        .butn1{
+            background-color: rgb(136, 253, 100);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .butn2{
+            background-color: rgb(100, 171, 253);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .butn3{
+            background-color: rgb(255, 93, 255);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .detail{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+       
+        .topp{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            
+        }
+        .bottom{
+            margin-top: 100px;
+            padding: 28px;
+            height: 170px;
+            width: 100%;
+            background-color: rgb(196, 196, 196);
+            border-radius: 25px;
+            /* /* display: flex; */
+            align-items: center; 
+        }
+        .side_bar {
+            
+            width: 220px;
+            background-color: rgb(59, 59, 59);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+
+        }
+        .container{
+            margin-left: 230px;
+        }
+        
+
+    </style>
 </head>
+
 <body>
     
+    <div class="overall">
+
+        <div class="side_bar">
+            <br>
+            <h3 class="title animate__animated animate__bounce" ><a style="color: red;">C</a><a style="color: yellow;"> R</a><a
+                    style="color: rgb(3, 231, 3);"> M</a></h3>
+            <br><br><br>
+            <a href="dashboard.html" class="side_bar_link"> Dashboard</a><br><br><br>
+            <a href="Add.html" class="side_bar_link" >Add Customer </a><br><br><br>
+            <a href="customers.html" class="side_bar_link">Customers</a><br><br><br>
+            <a href="profile.html" class="side_bar_link" style="margin-bottom: -20px;">About US !</a><br>
+        </div>
+        <div class="container">
+            <br>
+            <h1 class="page_head">About US !</h1>
+            <br><br>
+            
+           <div class="top_bar">
+            <div class="topp">
+                <div class="main">
+                    <img src="images/Code-N-Play.png" alt="Code-N-Play" class="image">
+                </div>
+                <div class="text">
+                    <h2 style="font-weight: 700;">Code-N-Play</h2>
+                    <br>
+                    <h4>This Mini CRM Designed by Neeraj | Distributed by Code-N-Play </h4>
+                </div>
+            </div>
+            <br>
+            <div class="detail">
+                <form action="https://www.dropbox.com/scl/fi/6xln2vjeksd0zs1y1m9nn/NEERAJ-new.pdf?rlkey=9yqbs1ke5ijzoibsirpt3i9eb&st=vunwk4pj&dl=1">
+                    <button type="submit" class="butn1">+91 7991308024</button>
+                </form>
+                <form action="https://www.linkedin.com/in/neeraj-kumar-6406b7332">
+                    <button type="submit" class="butn2">linkedin</button>
+                </form>
+                <form action="https://github.com/Code-N-Play">
+                    <button type="submit" class="butn3">GitHub</button>
+                </form>
+                
+            </div>
+            <div class="bottom">
+                <h4 style="font-weight: 700;">About CRM</h4>
+                <p>
+                    
+This CRM application helps manage customer information in one place, allowing users to add, edit, and view customer details easily. It also supports deal status tracking (Active/Closed) and provides quick insights through customer lists and summary cards, making customer management simple and efficient.
+                </p>
+            </div>
+
+
+        </div>
+    </div>        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="javascript/add.js"></script>
+    
 </body>
+
 </html>

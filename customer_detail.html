@@ -71,8 +71,43 @@
         .body{
             background-color: rgb(255, 255, 255);
             border-radius: 20px;
-            height: 525px;
+            height: 535px;
             padding: 25px;
+        }
+        .side_bar {
+            
+            width: 220px;
+            background-color: rgb(59, 59, 59);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+
+        }
+        .container{
+            margin-left: 230px;
+        }
+        table{
+            margin-top:-10px;
+            border-collapse: separate;
+            border-spacing: 15px;
+            border-radius: 15px;
+        }
+        .name{
+            font-size: 20px;
+            font-weight: 700;
+            
+        }
+        .name1{
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(2, 0, 122);
+            width: 80%;
+            height: 50px;
+            background-color: rgb(190, 250, 230);
+            border-radius: 20px;
+            padding-left: 40px;
+            
         }
 
         
@@ -92,7 +127,7 @@
             <a href="dashboard.html" class="side_bar_link"> Dashboard</a><br><br><br>
             <a href="Add.html" class="side_bar_link" >Add Customer </a><br><br><br>
             <a href="customers.html" class="side_bar_link">Customers</a><br><br><br>
-            <a href="#" class="side_bar_link" style="margin-bottom: -20px;">profile</a><br>
+            <a href="profile.html" class="side_bar_link" style="margin-bottom: -20px;">About US !</a><br>
         </div>
         <div class="container">
             <br>
@@ -103,34 +138,39 @@
 
                 <table class= customer_detail>
                     <tr>
-                        <td >Customer Name</td>
-                        <td id="name"></td>
+                        <td class="name">Customer Name :</td>
+                        <td id="name" class="name1"></td><br>
+                    </tr>
+                    
+                    <tr>
+                        <td class="name">E-Mail</td>
+                        <td id="email" class="name1"></td>
                     </tr>
                     <tr>
-                        <td>E-Mail</td>
-                        <td id="email"></td>
+                        <td class="name">Mobile Number</td>
+                        <td id="number" class="name1">    </td>
                     </tr>
                     <tr>
-                        <td>Mobile Number</td>
-                        <td id="number"></td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td id="address"></td>
+                        <td class="name">Address</td>
+                        <td id="address" class="name1"></td>
                     </tr>
 
                     <!-- faltudimag -->
-                    <tr>
+                    <!-- <tr>
                         <td>date</td>
                         <td id="date"></td>
+                    </tr> -->
+                    <tr>
+                        <td class="name">country</td>
+                        <td id="country" class="name1"></td>
                     </tr>
                     <tr>
-                        <td>country</td>
-                        <td id="country"></td>
+                        <td class="name">state</td>
+                        <td id="state" class="name1"></td>
                     </tr>
                     <tr>
-                        <td>state</td>
-                        <td id="state"></td>
+                        <td class="name">status</td>
+                        <td id="status" class="name1"></td>
                     </tr>
                 </table>
 
